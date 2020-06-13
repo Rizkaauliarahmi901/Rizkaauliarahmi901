@@ -6,7 +6,7 @@ main:
      url: scrapp.html
   # - title: "Sample Posts"
   #   url: /year-archive/
-   - title: "Sample Collections"
+  # - title: "Sample Collections"
+   #  url: album.html
+   - title: "Sitemap"
      url: album.html
-  # - title: "Sitemap"
-  #   url: /sitemap/
