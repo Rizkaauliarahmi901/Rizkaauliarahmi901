@@ -14,29 +14,26 @@
                             $(document).ready(function(){
                                 $.getJSON('result.json',function(brt){
                                     var imagee ='';
-                                    var i = 1;
-                                    imagee = "<table border='1'><tr><td>No</td><td>Kategori</td><td>Judul Artikel</td><td>Waktu Publish</td><td>Waktu Update</td></tr>"
                                         $.each(brt, function(key, value){
-                                        
                                             imagee += value.completions
-                                            imagee += value.id
-                                            imagee += value.lead_time
-                                            imagee += value.result
-                                            imagee += value.form_name
-                                            imagee += value.id
-                                            imagee += value.original_height
-                                            imagee += value.original_width
-                                            imagee += value.source
-                                            imagee += value.to_name
-                                            imagee += value.type
-                                            imagee += value.value
-                                            imagee += value.points
-                                            imagee += value.polygonlabels
-                                            imagee += value.choices
                                             imagee += value.data
+                                           // imagee += value.lead_time
+                                           // imagee += value.result
+                                           // imagee += value.form_name
+                                           // imagee += value.id
+                                           // imagee += value.original_height
+                                            //imagee += value.original_width
+                                            //imagee += value.source
+                                            //imagee += value.to_name
+                                            //imagee += value.type
+                                            //imagee += value.value
+                                            //imagee += value.points
+                                            //imagee += value.polygonlabels
+                                            //imagee += value.choices
+                                            //imagee += value.data
                                          
                                         });
-                                        $('#hedlen').append(imagee);
+                                        $('#gambar').append(imagee);
                                         });
                             });
                         </script>
@@ -113,7 +110,7 @@
                             <img src ="https://www.nationalgeographic.com/content/dam/environment/photos/000/002/293.adapt.1900.1.jpg" class="img-thumbnail" alt="Cinque Terre" width="304" height="236"> 
                             <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
                         </svg>
-                        <div id="hedlen"></div>
+                        <div id="gambar"></div>
                         <div class="card-body">
                             <p class="card-text">
                                "this is lalalala" 
