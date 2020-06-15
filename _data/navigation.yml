@@ -9,4 +9,4 @@ main:
   # - title: "Sample Collections"
    #  url: album.html
     - title: "Sitemap"
-     url: album.html
+      url: album.html
