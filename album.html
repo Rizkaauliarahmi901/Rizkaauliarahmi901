@@ -12,26 +12,19 @@
     <title>Album</title>
                     <script>
                             $(document).ready(function(){
-                                $.getJSON('result.json',function(brt){
-                                    var imagee ='';
-                                        $.each(brt, function(key, value){
-                                           // imagee += value.completions
-                                            imagee += value.image_src
-                                           // imagee += value.lead_time
-                                           // imagee += value.result
-                                           // imagee += value.form_name
-                                           // imagee += value.id
-                                           // imagee += value.original_height
-                                            //imagee += value.original_width
-                                            //imagee += value.source
-                                            //imagee += value.to_name
-                                            //imagee += value.type
-                                            //imagee += value.value
-                                            //imagee += value.points
-                                            //imagee += value.polygonlabels
-                                            //imagee += value.choices
-                                            //imagee += value.data
-                                         
+                                $.getJSON('result.json',function(data){
+                                    console.log(data);
+                                    var imagee =[];
+                                        $.each(data, function(i, animals){
+                                         //   imagee += value.image_src;
+                                            $.each(animals.tag, function (j,tag){
+                                                $.each(tag.p, function (k, p){
+                                               //imagee += p.points
+                                              // imagee += p.polygonlabels;
+                                              // imagee += p.data;
+                                               imagee += p.image_src;
+                                             // }
+                                         }
                                         });
                                         $('#gambar').append(imagee);
                                         });
