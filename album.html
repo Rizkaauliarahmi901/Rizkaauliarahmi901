@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+ <head>
+     <meta charset="utf-8">
+     <meta name="cobain dulu">
+     <meta name="author" content="Rizka Auliarahmi">
+     <meta name="tanggal" content="08/06/2020 15.02">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <title>Album</title>
+                    <script>
+                            $(document).ready(function(){
+                                $.getJSON('labellingResult.json',function(data){
+                                    var imagee = '';
+                                        $.each(data, function(key, value){
+                                        imagee += value.image_src;
+                                        
+                                         
+                                        });
+                                        $('#gambar').append(imagee);
+                                        });
+                            });
+                        </script>
+ </head>
+ <body>
+    <header>
+        <div class="collapse bg-dark" id="navbarHeader" style>
+            <div class="container">
+                <div class="row">
+                    <div clas="col-sm-8 col-md-7 py-4">
+                        <h4 class="text-white">About</h4>
+                    <p class="text-muted">
+                        klasifikasi hewan berdasarkan 
+                    </p>
+                </div>
+                <div id="gambar"></div>
+                <div class="col-sm-4 offset-md-1 py-4">
+                    <h4 class="text-white">Contact</h4>
+                <u1 class="list-unstyled">
+                    <1i>
+                        <a href="#" class="text-white">Follow on Instagram</a>
+                    </1i>
+                    <1i>
+                        <a href="#" class="text-white">Like on facebook</a>
+                    </1i>
+                    <1i>
+                        <a href="#" class="text-white">Email us</a>
+                    </1i>
+                </u1>
+                </div>
+                </div>
+            </div>
+        </div>
+                <div class="navbar navbar-dark bg-dark shadow-sm">
+                    <div class="container d-flex justify-content-between">
+                        <a href="#" class="navbar-brand d-flex align-items-center">
+                            <svg xmins="https://www.w3.org/2000/svg" width="20" height="20" 
+                            fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" 
+                            stroke-width="2" aria-hidden="true" class="mr-2" viewBox="0 0 24 24" focusable="false">
+                        <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h412-3h612 3h4a2 2 0 0 1 2 2z">
+                            <circle cx="12" cy="13" r="4"></circle>
+                        </path>
+                        </svg>
+                        <strong>Album</strong>
+                    </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
+                        aria-label="Toggle navigation">
+                            <span class="navbar=toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+    </header> 
+    <main role="main">
+        <section class="jumbotron text-center">
+            <div class="container">
+                <h1>Nyobain Album</h1>
+                <p class="lead text-muted">
+                    Nyobain dulu semoga lancar aamiin
+                </p>
+                <p>
+                    <a href="#" class="btn btn-primary my-2">Main call</a>
+                    <a href="#" class="btn btn-primary my-2">Secondary action</a>
+                </p>
+            </div>
+        </section>
+        <div class="album py-5 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+                            preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder:Thumbnail">
+                            <title>PlaceHolder</title>
+                            <rect width="100%" height="100%" fill="#5595c"></rect>
+                            
+                            <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+                        </svg>
+                        <div id="gambar"></div>
+                        <div class="card-body">
+                            <p class="card-text">
+                               "this is lalalala" 
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                   <button type="button" class="btn btn-sm btn-outline-secondary">View</button> 
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                </div>
+                                <small class="text-muted">9 mins</small>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="text-muted">
+        <div class="container">
+            <p class="float-right">
+                <a href="#">Back to top</a>
+            </p>
+            <p>
+               Album example is @bootstrap 
+            </p>
+            <p>
+                "New to bootsrap"
+                <a href="https://getbootstrap.com"></a>
+            </p>
+        </div>
+    </footer>
+ </body>
