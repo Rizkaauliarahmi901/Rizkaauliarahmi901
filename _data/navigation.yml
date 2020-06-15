@@ -4,9 +4,9 @@ main:
    # url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
    - title: "Task5.5_1B_191524057"
      url: scrapp.html
-  # - title: "Sample Posts"
-   #  url: album.html
+   - title: "Sample Posts"
+     url: album.html
   # - title: "Sample Collections"
    #  url: album.html
-    - title: "Sitemap"
-      url: album.html
+   # - title: "Sitemap"
+    #  url: album.html
