@@ -5,8 +5,8 @@ main:
    - title: "Task5.5_1B_191524057"
      url: scrapp.html
    - title: "Sample Posts"
-     url: album.html
-   - title: "Sample Collections"
-     url: Republika.html
+     url: index.html
+ #  - title: "Sample Collections"
+  #   url: Republika.html
    # - title: "Sitemap"
     #  url: album.html
